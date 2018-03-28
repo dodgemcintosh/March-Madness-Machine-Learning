@@ -15,21 +15,21 @@ _Author: Dodge McIntosh_
 
 ## Project Context
 
-" Google Cloud and NCAA® teamed up to bring this year’s version of the Kaggle machine learning competition. Another year, another chance to anticipate the upsets, call the probabilities, and put your bracketology skills to the leaderboard test. Kagglers will join the millions of fans who attempt to forecast the outcomes of March Madness® during this year's NCAA Division I Men’s and Women’s Basketball Championships. But unlike most fans, you will pick your bracket using a combination of NCAA’s historical data and your computing power, while the ground truth unfolds on national television."
+"Google Cloud and NCAA® teamed up to bring this year’s version of the Kaggle machine learning competition. Another year, another chance to anticipate the upsets, call the probabilities, and put your bracketology skills to the leaderboard test. Kagglers will join the millions of fans who attempt to forecast the outcomes of March Madness® during this year's NCAA Division I Men’s and Women’s Basketball Championships. But unlike most fans, you will pick your bracket using a combination of NCAA’s historical data and your computing power, while the ground truth unfolds on national television."
 - From Kaggle website
 
 ## Data sources
 
-> - Much of the information was provided by Kaggle (maybe too much)
-  - Participants were free to incorporate any outside sources of information as long as they were free and publicly accessible
+- Much of the information was provided by Kaggle (maybe too much)
+- Participants were free to incorporate any outside sources of information as long as they were free and publicly accessible
 
 ## Modeling Process Overview
 
 1. Pull in all relevant data provided by Kaggle and scrape additional data (as neccessary).
 2. The training dataset is based off the detailed box scores from the regular season. I used this data to make advanced analytics for each team based on the NBA approach, available for reference [here](http://hangtime.blogs.nba.com/2013/02/15/the-new-nba-comstats-advanced-stats-all-start-with-pace-and-efficiency/).
 Within this process I performed:
-- advanced feature engineering
-- working with and successfully merging multiple different dataframes
+    - advanced feature engineering
+    - working with and successfully merging multiple different dataframes
 3. Generated my classification model (a random forest) using the training data. Within this process, I made use of:
     - train-test split for validation
     - grid searching for hyperparameters
